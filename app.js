@@ -53,17 +53,18 @@ function init(){
 	function evalOutput(){
 		output.style.border = 'black solid 1px';
 		console.log("=");
-		if(output.value === ""){
+
+		if(output.value === "")
+		{
 			c0utput('red');	
 		}else if (eva){
 			c0utput('red');	
 		}
-		
 		else{
 		
-			output.value = eval(output.value);
-		
+			output.value = eval(output.value);		
 		}
+		dec = output.value.includes('.');
 
 	
 	}
